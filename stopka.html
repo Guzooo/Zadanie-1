@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             h1 {
                 color:#11a399; 
@@ -14,16 +16,7 @@
             }
 
             .homeDive {
-                display: flex;
-                overflow: hidden;
                 background-color:#1e3e57;
-            }
-
-            .childHomeDiv{
-                width: 25%;
-                margin: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
             }
 
             .textSegment1{
@@ -39,6 +32,9 @@
             .infoImagePerson{
                 width:100px;
                 height:100px;
+                margin: auto;
+                margin-left: 0px;
+                margin-right: 0px;
             }
 
             .infoTextInLine{
@@ -80,16 +76,14 @@
 
             .segemnt3Text{
                 display: inline;
-                vertical-align: middle;                
+                vertical-align: middle;
             }
 
             .segmentsOfSegment4{
-                height: 45%;
-                margin-bottom: 5%;
+                margin-bottom: 15px;
             }
 
             .search{
-                width: max-content;
                 height: 30px;
                 vertical-align: middle;
             }
@@ -108,48 +102,48 @@
             }
 
             .downText{
-                text-align: center;
-                margin: 0px;
-                padding:30px;
                 background-color: #162b3c;
+                color: white;
+                margin: 0px;
             }
         </style>
     </head>
     <body>
-        <div class="homeDive">
+        <div class="container-fluid">
+            <div class="row homeDive">
 
-            <div class="childHomeDiv">
-                <h1>About</h1>
-                <p></p>
-                <p></p>
-                <p class="textSegment1">larem lpsum is yhat is has amore lorem ipsum connneare</p>
-                <p></p>
-                <p class="textSegment1">fusce roontourtor ut est consestures elemeentr. Quisem center tickenre lacus, mom iaedull risi egestats in. Nam molls nulla vei massa friglla</p>
-            </div>
+                <div class="col-md-3 col-sm-6">
+                    <h1>About</h1>
 
-            <div class="childHomeDiv">
-                <h1>Recent Posts</h1>
+                    <p class="textSegment1">Lorem lpsum is that it has amore lorem ipsum consequatur.</p>
+                    <p></p>
+                    <p class="textSegment1">Fusce non tortor ut est consectetur elementum. Quisque ornare tinciduny lacus, non iaculis nisi egestas in. Nam mollis nulla vel massa fringilla.</p>
+                </div>
 
-                <div class="divInfoPeople">
-                    <img src="http://krytykapolityczna.pl/file/2015/09/Lukasz-Saturczak-96x96.jpg" class="infoImagePerson">
+                <div class="col-md-3 col-sm-6">
+                    <h1>Recent Posts</h1>
 
-                    <div class="infoTextInLine">
-                        <p class="infoTitle">Larem ipsum doktor</p>
+                    <div class="divInfoPeople">
+                        <img src="http://krytykapolityczna.pl/file/2015/09/Lukasz-Saturczak-96x96.jpg" class="infoImagePerson img-rounded">
 
-                        <div class="divInfoText">
-                            <img src="calendar.png" class="infoTextImage">
-                            <p class="infoText">May 15, 2016</p>
-                        </div>
+                        <div class="infoTextInLine">
+                            <p class="infoTitle">Lorem ipsum dolor</p>
 
-                        <div class="divInfoText">
-                            <img src="comments.png" class="infoTextImage">    
-                            <p class="infoText">2 coments</p>
+                            <div class="divInfoText">
+                                <img src="calendar.png" class="infoTextImage">
+                                <p class="infoText">May 15, 2016</p>
+                            </div>
+
+                            <div class="divInfoText">
+                                <img src="comments.png" class="infoTextImage">    
+                                <p class="infoText">2 Comments</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="divInfoPeople">
-                    <img src="https://www.xing.com/image/6_8_e_4f9ddbc34_24875406_1/janusz-kowalski-foto.256x256.jpg" class="infoImagePerson">
-                    <div class="infoTextInLine">
+                    <div class="divInfoPeople">
+                        <img src="https://www.xing.com/image/6_8_e_4f9ddbc34_24875406_1/janusz-kowalski-foto.256x256.jpg" class="infoImagePerson img-rounded">
+                        
+                        <div class="infoTextInLine">
                             <p class="infoTitle">Nam vulputate bib</p>
 
                             <div class="divInfoText">
@@ -159,67 +153,68 @@
 
                             <div class="divInfoText">
                                 <img src="comments.png" class="infoTextImage">    
-                                <p class="infoText">2 coments</p>
+                                <p class="infoText">2 Comments</p>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="childHomeDiv">
-                <h1>Support</h1>
-                <p></p>
+                <div class="col-md-3 col-sm-6">
+                    <h1>Support</h1>
 
-                <div class="divSegment3List">
-                    <img src="wiekszosci.png" class="segment3Image">
-                    <p class="segemnt3Text">Gloabal Excluisive</p>
+                    <div class="container-fluid divSegment3List">
+                        <img src="wiekszosci.png" class="segment3Image">
+                        <p class="segemnt3Text">Global Exclusive</p>
+                    </div>
+
+                    <div class="container-fluid divSegment3List">
+                        <img src="wiekszosci.png" class="segment3Image">
+                        <p class="segemnt3Text">Asperiores list</p>
+                    </div>
+
+                    <div class="container-fluid divSegment3List">
+                        <img src="wiekszosci.png" class="segment3Image">
+                        <p class="segemnt3Text">Consequstur</p>
+                    </div>
+
+                    <div class="container-fluid divSegment3List">
+                        <img src="wiekszosci.png" class="segment3Image">
+                        <p class="segemnt3Text">Exclusive Global</p>
+                    </div>
+
+                    <div class="container-fluid divSegment3List">
+                        <img src="wiekszosci.png" class="segment3Image">
+                        <p class="segemnt3Text">Asperiores list</p>
+                    </div>
+
+                    <div class="container-fluid divSegment3List">
+                        <img src="wiekszosci.png" class="segment3Image">
+                        <p class="segemnt3Text">Consequstur</p>
+                    </div>
                 </div>
 
-                <div class="divSegment3List">
-                    <img src="wiekszosci.png" class="segment3Image">
-                    <p class="segemnt3Text">Asperience flat</p>
-                </div>
+                <div class="col-md-3 col-sm-6">
+                
+                    <div class="segmentsOfSegment4">
+                        <h1>Search Website</h1>
+                        <input type="text" placeholder="Enter your search term..." class="search">
+                        <img src="https://img.icons8.com/metro/1600/search.png" class="iconSerch">
+                    </div>
 
-                <div class="divSegment3List">
-                    <img src="wiekszosci.png" class="segment3Image">
-                    <p class="segemnt3Text">Contiqiubar</p>
-                </div>
+                    <div class="segmentsOfSegment4">
+                        <h1>Around The Web</h1>
 
-                <div class="divSegment3List">
-                    <img src="wiekszosci.png" class="segment3Image">
-                    <p class="segemnt3Text">Exclusive Globas</p>
-                </div>
-
-                <div class="divSegment3List">
-                    <img src="wiekszosci.png" class="segment3Image">
-                    <p class="segemnt3Text">Asperience flat</p>
-                </div>
-
-                <div class="divSegment3List">
-                    <img src="wiekszosci.png" class="segment3Image">
-                    <p class="segemnt3Text">Contiqiubar</p>
-                </div>
-            </div>
-
-            <div class="childHomeDiv">
-            
-                <div class="segmentsOfSegment4">
-                    <h1>Search Website</h1>
-                    <input type="text" placeholder="Enter your search term..." class="search">
-                    <img src="https://img.icons8.com/metro/1600/search.png" class="iconSerch">
-                </div>
-
-                <div class="segmentsOfSegment4">
-                    <h1>Around The Web</h1>
-
-                    <div>
-                        <a href="https://twitter.com"><img src="https://www.tabletowo.pl/wp-content/uploads/2017/02/twitter.png" class="sociaMediaIcon"></a>
-                        <a href="https://facebook.com"><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="sociaMediaIcon"></a>
-                        <a href="https://google.com"><img src="https://i.redd.it/jjpxvq0hi0x01.png" class="sociaMediaIcon"></a>
-                        <a href="https://nk.pl"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo_NK.svg/1200px-Logo_NK.svg.png" class="sociaMediaIcon"></a>
+                        <div>
+                            <a href="https://twitter.com"><img src="https://www.tabletowo.pl/wp-content/uploads/2017/02/twitter.png" class="sociaMediaIcon"></a>
+                            <a href="https://facebook.com"><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="sociaMediaIcon"></a>
+                            <a href="https://google.com"><img src="https://i.redd.it/jjpxvq0hi0x01.png" class="sociaMediaIcon"></a>
+                            <a href="https://nk.pl"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo_NK.svg/1200px-Logo_NK.svg.png" class="sociaMediaIcon"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="downText">© 2016 Delghted Footer Widget. All rights reserved | Design by <a href="https://www.google.pl/">Google</a></p>
+
+        <p class="container-fluid downText jumbotron text-center">© 2016 Delighted Footer Widget. All rights reserved | Design by <a href="https://www.google.pl/">Google</a></p>
     </body>
 </html>
